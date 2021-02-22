@@ -4,7 +4,6 @@ checker.controller('Control', function($scope) {
 	$scope.str='';
 	
 	$scope.out="Default";
-	$scope.msg = "Shreya like paav bhaji";
 	$scope.message = function() {
 		if(!$scope.str ||  $scope.str.length==0) {
 			$scope.out = "Please enter data first";
@@ -19,10 +18,3 @@ checker.controller('Control', function($scope) {
 	}
 });
 
-checker.filter('One', function(){
-	return function(input){
-		input = input || "";
-		input = input.replace("like", "love");
-		return input;
-	}
-})

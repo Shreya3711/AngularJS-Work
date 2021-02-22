@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lunch Checker</title>
+    <title>Balance Your Diet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script type="text/javascript" src="ass1.js"></script>
@@ -15,7 +15,7 @@
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
-             <input id="lunch-menu" type="text" placeholder="list of dishes" class="form-control" ng-model='str'></input>
+             <input id="lunch-menu" type="text" placeholder="Enter your food consumption list" class="form-control" ng-model='str'></input>
                <p> Items Selected: <span ng-bind="str"> </span></p>
          </div>
 
@@ -30,8 +30,7 @@
            <p>  <span ng-bind="out"> </span></p>
          </div>
    </div>
-   <strong>Before Filter:{{msg}} </strong><br>
-   <strong> After Filter:{{msg | One}}</strong>
+
 </center>
 </body>
 </html>

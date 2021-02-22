@@ -3,6 +3,7 @@
   <head>
     <title>Balance Your Diet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script type="text/javascript" src="ass1.js"></script>
     <style>
@@ -15,22 +16,18 @@
      <h1>Balance Your Diet</h1>
 
          <div class="form-group">
-             <input id="lunch-menu" type="text" placeholder="Enter your food consumption list" class="form-control" ng-model='str'></input>
+             <input id="lunch-menu" type="text" placeholder="list of dishes" class="form-control" ng-model='str'></input>
                <p> Items Selected: <span ng-bind="str"> </span></p>
          </div>
 
-
-
-
-         <div class="form-group">
-             <button class="btn btn-default" ng-click="message()">Check If Too Much</button>
-         </div>
+    <div class="container" style="width: 40%;margin: 10px auto 10px auto;">
+    <button class="btn btn-info my-4 btn-block" type="submit" ng-click="message()">Check If Too Much</button>
+  </div>
          <div class="form-group message">
            <!-- Your message can go here. -->
            <p>  <span ng-bind="out"> </span></p>
          </div>
    </div>
-
 </center>
 </body>
 </html>
